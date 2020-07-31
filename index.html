@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>multistep form</title>
+      <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="./assets/css/multiform.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="./assets/javascipt/multiform.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Montaga|Montserrat" rel="stylesheet">
+   </head>
+   <body class="headerfi">
+      <div class="row">
+         <div class="col-md-8 col-md-offset-4">
+            <div id="main_form">
+               <ul id="p_bar">
+                  <li class="active">Personal Details</li>
+                  <li >Experience</li>
+                  <li >Skills</li>
+                  <li >Education</li>
+                  <li >Projects</li>
+                  <li >Awards</li>
+               </ul>
+               <fieldset class="f1">
+                  <h2 class="m_head">Personal Details</h2>
+                  <h4 class="s_head">Tell us something more about you</h4>
+                  <div class="form-group col-md-12 ">
+                     <input type="text" class="form-control fname col-md-6" id="f_name" placeholder="First Name">
+                     <input type="text" class="form-control lname col-md-6" id="l_name" placeholder="Last Name">
+                  </div>
+                 
+                  <div class="form-group">
+                     <input type="text" class="form-control Address" id="address" placeholder="Enter your Address">
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control Email" id="Email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control roll" id="Roll" placeholder="Roll Number">
+                  </div>
+          
+                  <div class="form-group">
+                     <input type="text" class="form-control contact" id="contact" placeholder="Contact">
+                  </div>
+                  <div class="form-group">
+                     <input type="Email" class="form-control" id="github" name="twitter" placeholder="github">
+                  </div>
+                  <div class="form-group">
+                     <input type="Email" class="form-control" id="LinkedIn" name="fb" placeholder="LinkedIn">
+                  </div>
+                  <div class="form-group">
+                     <input type="Email"class="form-control" id="MRID" name="instagram" placeholder="Manav Rachna mail Id">
+                  </div>
+                  <div class="form-group">
+                     <p id="notify1" style="color:blue;"></p>
+                  </div>
+                  <div class="form-group" >
+                     <button class="btn btn-primary btn-lg next1" >Next</button>
+                  </div>
+               </fieldset>
+               <fieldset class="f2">
+                  <h2 class="m_head">Experience</h2>
+                  <h4 class="s_head" >Tell us about your past Experience/Internships</h4>
+               
+                  <div class="ExperienceSection">
+
+                  </div>
+                     <div class="form-group " >
+                     
+                        <label for="formGroupExampleInput">Company Name</label>
+                        <input type="text" class="form-control" id="company" placeholder="Google">
+                     </div>
+                      <div class="form-group">
+                        <label for="formGroupExampleInput2">Job Title</label>
+                        <input type="text" class="form-control" id="job" placeholder="Software Engineer">
+                      </div>
+                      <div class="form-group">
+                         <label for="formGroupExampleInput2">Job Location</label>
+                         <input type="text" class="form-control" id="location" placeholder="Mountain view, CA">
+                       </div>
+                       <div class="form-group">
+                         <label for="formGroupExampleInput2">Completion</label>
+                         <input type="month" class="form-control" id="start" placeholder="jul 2019">
+                       </div>
+                       <div class="form-group">
+                         <label for="formGroupExampleInput2">Job Description</label>
+                         <textarea type="text" class="form-control "id="end"></textarea>
+                       </div>
+                       
+                       
+                     
+                  
+                  <div class="form-group" >
+                     <button class="btn btn-primary btn-lg exp">ADD Experience</button>
+                     <button class="btn btn-primary btn-lg rem ">Remove Experience</button>
+                  </div>
+                  
+                     <p id="notify2" style="color:blue;"></p>
+            
+                  <div class="form-group" >
+                     <button class="btn btn-primary btn-lg previous1">Previous</button>
+                     <button class="btn btn-primary btn-lg next2 ">Next</button>
+                  </div>
+               </fieldset>
+               <fieldset class="f3">
+                  <h2 class="m_head">Skills</h2>
+                  <h4 class="s_head" >Enter your Skills here</h4>
+                
+                  <div class="SkillSection">
+
+                  </div>
+
+                  <div class="form-group">
+                     <input type="text" class="form-control " id="skillName" placeholder="Programming Languages" required autofocus>
+                  </div>
+                  <div class="form-group">
+                     <textarea type="text" class="form-control " id="skillDetail" placeholder="Java,C/C++,JS,Python" required autofocus></textarea>
+                  </div>
+
+                  <div class="form-group" >
+                     <button class="btn btn-primary btn-lg addSkill">ADD Skill</button>
+                     <button class="btn btn-primary btn-lg remSkill ">Remove Skill</button>
+                  </div>
+                 
+                  <div class="form-group">
+                     <p id="notify3" style="color:blue;"></p>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-primary btn-lg previous2">Previous</button>
+                     <button class="btn btn-primary btn-lg next3">Submit</button>
+                  </div>
+               </fieldset>
+               <fieldset class="f4 col-md-12">
+                  <h2 class="m_head">Education</h2>
+                  <h4 class="s_head" >Fill in your Education Section</h4>
+              
+                  <div class="form-group">
+                     <div id="education-details" >
+                        <table class="table table-bordered table-responsive">
+                           <thead>
+                             <tr>
+                               <th scope="col">Sno</th>
+                               <th scope="col">Qualification</th>
+                               <th scope="col">Institute/University</th>
+                               <th scope="col">Year Of Passing</th>
+                               <th scope="col">Marks</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+                             <tr>
+                               <th scope="row">1</th>
+                               <td> <input type="text" id= "q11" size="25"></td>
+                               <td>
+                                 <input type="text"  id= "q12" size="25">
+                             </td>
+                             <td>
+                                 <input type="month" id= "q13">
+                             </td>
+                             <td>
+                                 <input type="number" min="0" max="100" id= "q14">
+                             </td>
+                             </tr>
+                             <tr>
+                               <th scope="row">2</th>
+                               <td>
+                                 <input type="text" size="25" id= "q21">
+                             </td>
+                             <td>
+                                 <input type="text" size="25" id= "q22">
+                             </td>
+                             <td>
+                                 <input type="month" id= "q23">
+                             </td>
+                             <td>
+                                 <input type="number" min="0" max="100" id= "q24">
+                             </td>
+                             </tr>
+                             <tr>
+                               <th scope="row">3</th>
+                               <td>
+                                 <input type="text" size="25" id= "q31">
+                             </td>
+                             <td>
+                                 <input type="text" size="25" id= "q32">
+                             </td>
+                             <td>
+                                 <input type="month" id= "q33">
+                             </td>
+                             <td>
+                                 <input type="number" min="0" max="100" id= "q34">
+                             </td>
+                             </tr>
+                           </tbody>
+                         </table>
+
+
+
+
+
+
+
+                        
+                    </div>
+                    
+                     <p id="notify4" style="color:blue;"></p>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-primary btn-lg previous3">Previous</button>
+                     <button class="btn btn-primary btn-lg next4">Submit</button>
+                  </div>
+               </fieldset>
+               <fieldset class="f5">
+                  <h2 class="m_head">Projects</h2>
+                  <h4 class="s_head" >Enter  your projects</h4>
+                  <div class="ProjectSection">
+
+                  </div>
+                  <div class="form-group">
+                     
+                     <label for="formGroupExampleInput">Project Name</label>
+                     <input type="text" class="form-control" id="projectName" placeholder="CO2 Emiision report">
+                   </div>
+                   <div class="form-group">
+                     <label for="formGroupExampleInput2">project Description</label>
+                     <textarea type="text" class="form-control" id="projectdescription" placeholder="write something about your project">
+                  </textarea>
+                     </div>
+                   <div class="form-group">
+                      <label for="formGroupExampleInput2">Link to Project</label>
+                      <input type="text" class="form-control" id="projectLink" placeholder="https:xxxxx.github.io/xxx">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Completion Date</label>
+                      <input type="text" class="form-control" id="completion" placeholder="Ongoing">
+                    </div>
+                    
+                    
+                    <div class="form-group" >
+                     <button class="btn btn-primary btn-lg addProject">ADD Project</button>
+                     <button class="btn btn-primary btn-lg remProject ">Remove Project</button>
+                  </div>
+                  <div class="form-group">
+                  <div class="form-group">
+                     <p id="notify5" style="color:blue;"></p>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-primary btn-lg previous4">Previous</button>
+                     <button class="btn btn-primary btn-lg next5">Submit</button>
+                  </div>
+               </fieldset>
+               <fieldset class="f6">
+                  <h2 class="m_head">Achievements</h2>
+                  <h4 class="s_head" >Fill in all your achievements</h4>
+                  <div class="AchievementSection">
+
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control " id="AwardName" placeholder="Award Name" required autofocus>
+                  </div>
+                  <div class="form-group">
+                     <textarea type="text" class="form-control " id="AwardDetail" placeholder="Award Description" required autofocus>
+                     </textarea>
+                     </div>
+                 
+                     <div class="form-group" >
+                        <button class="btn btn-primary btn-lg addAchievemnt">ADD Achievement</button>
+                        <button class="btn btn-primary btn-lg remAchievement ">Remove Achievement</button>
+                     </div>
+
+                  <div class="form-group">
+                     <p id="notify6" style="color:blue;"></p>
+                  </div>
+                  <div class="form-group">
+                     <button class="btn btn-primary btn-lg previous5">Previous</button>
+                     <button class="btn btn-primary btn-lg next6">Submit</button>
+                  </div>
+               </fieldset>
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>
