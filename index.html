@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>multistep form</title>
+      <title>CVMaker</title>
       <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="./assets/css/multiform.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script type="text/javascript" src="./assets/javascipt/multiform.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Montaga|Montserrat" rel="stylesheet">
    </head>
    <body class="headerfi">
-      <div class="row">
-         <div class="col-md-8 col-md-offset-4">
+      
+      <div class=" col-sm-5 animation">
+         
+         
+            <h1 style="float: left;">
+               <span>C</span>
+               <span>I</span>
+               <span>M</span>
+               <span>I</span>
+               <span>C</span>
+               <span>O</span>
+               <span>'</span>
+               <span>S</span>
+               <br>
+               <span>C</span>
+               <span>V</span>
+               <span>M</span>
+               <span>A</span>
+               <span>K</span>
+               <span>E</span>
+               <span>R</span>
+           </h1>
+           
+           <div class="icon">
+            <svg height="250" width="250" class="bg">
+               <path d="m 30 70 q 24 -6 41 -30 q 20 -22 48 13 q 12 12 43 28 q 32 16 -20 45 q -18 9 -31 31 q -21 33 -49 0 q -25 -30 -40 -42 q -15 -9 -13 -22 t 14 -20 z" stroke="#f7faff" stroke-width="2" fill="#f7faff" />
+            </svg>
+            <div class="boy">
+               <span class="boy-shirt"></span>
+               <svg height="150" width="150" class="boy-face">
+                  <path d="m 50 10 q 25 0 23 30 q -3 19 -23 20 q -19 -1 -22 -20 q -2 -30 22 -30" stroke="none" stroke-width="1" fill="#f2daa0" />
+               </svg>
+         <!-- 		<div class="boy-badge">
+                  <div class="image">
+                     <i class="fas fa-align-left"></i>
+                  </div>
+               </div> -->
+               <svg height="150" width="150" class="boy-hair">
+                  <path d="m 50 40 q 8 0 15 -12 q 5 5 5 15 q 5 -25 -10 -30 q -10 -3 -20 0 q -14 5 -10 30 q 0 -5 3 -10 q 2 2 2 5 q 3 -1 5 -5 q 2 3 2 7 q 4 0 7 -7 q 2 3 0 7 z " stroke="#222" stroke-width="1" fill="#222" width="150" height="150"/>
+               </svg>
+               <svg height="50" width="50" class="boy-hair-lick-1">
+                  <path d="m 0 0 q 10 2 10 10 q 0 5 -5 10 q 3 -7 -5 -20 z" stroke="#222" stroke-width="1" fill="#222" />
+               </svg>
+               <svg height="50" width="50" class="boy-hair-lick-2">
+                  <path d="m 0 0 q 10 2 10 10 q 0 5 -5 10 q 3 -7 -5 -20 z" stroke="#222" stroke-width="1" fill="#222" />
+               </svg>
+               <svg height="150" width="150" class="boy-hair-shadow">
+                  <path d="m 50 40 q 8 0 15 -12 q 3 4 4 15 q 5 -25 -11 -30 q -10 -3 -18 0 q -14 5 -10 30 q 0 -5 3 -10 q 2 2 2 5 q 3 -1 5 -5 q 2 3 2 7 q 4 0 7 -7 q 2 3 0 7 z " stroke="#d1b46d" stroke-width="1" fill="#d1b46d" />
+               </svg>
+               <div class="boy-ears">
+                  <span class="left-ear"></span>
+                  <span class="right-ear"></span>
+               </div>
+               <div class="boy-eyes">
+                  <span class="left-eye eye"></span>
+                  <span class="right-eye eye"></span>
+               </div>
+               <div class="boy-brows">
+                  <span class="left-brow"></span>
+                  <span class="right-brow"></span>
+               </div>
+               <div class="boy-mouth"></div>
+            </div>
+            <div class="palm-left"></div>
+            <div class="palm-right"></div>
+            <ul class="fingers-left id">
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+            </ul>
+            <ul class="fingers-right id">
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+               <li class="id-li"></li>
+            </ul>
+            <div class="keyboard">
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+               <span class="key"></span>
+            </div>
+            
+         </div>
+        
+   
+      
+       
+      </div>
+      <div class="row col-sm-7">
+       
+         <div class="col-sm-12 ">
             <div id="main_form">
                <ul id="p_bar">
                   <li class="active">Personal Details</li>
@@ -20,7 +119,7 @@
                   <li >Projects</li>
                   <li >Awards</li>
                </ul>
-               <fieldset class="f1">
+               <fieldset class="f1 box" >
                   <h2 class="m_head">Personal Details</h2>
                   <h4 class="s_head">Tell us something more about you</h4>
                   <div class="form-group col-md-12 ">
@@ -134,8 +233,8 @@
                   <h4 class="s_head" >Fill in your Education Section</h4>
               
                   <div class="form-group">
-                     <div id="education-details" >
-                        <table class="table table-bordered table-responsive">
+                     <div id="education-details" class="table-responsive" >
+                        <table class="table table-bordered ">
                            <thead>
                              <tr>
                                <th scope="col">Sno</th>
